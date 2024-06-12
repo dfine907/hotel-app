@@ -220,6 +220,9 @@ export const metadata: Metadata = {
 - BY DEFAULT, NEXT.JS USES SERVER COMPONENTS !!!!
 - To use Client Components, you can add the React "use client" directive
 
+### Dina Notes:
+React Server Components are a way to build parts of your user interface (UI) that can be generated on the server. This means the server creates the UI before sending it to the user's browser. By doing this, you can make your app faster and more efficient.
+
 ### Server Components
 
 Benefits :
