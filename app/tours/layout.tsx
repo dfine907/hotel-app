@@ -3,7 +3,7 @@ function ToursLayout({ children }: { children: React.ReactNode }) {
     <div>
       <header className="py-2 w-1/2 bg-slate-400 round mb-4">
         <h1 className="text-3xl text-white text-center">
-          Nested Layout Here
+          (Nested Layout)
         </h1>
       </header>
       {children}
