@@ -1,5 +1,4 @@
-import mapsImg from '@/images/maps.jpg'
-import bike from '@/images/bikeFbanks.jpeg'
+import peak from '@/images/peak.jpg'
 import Image from 'next/image'
 
 const url = 'https://www.course-api.com/images/tours/tour-2.jpeg'
@@ -15,7 +14,7 @@ function page({ params }: { params: { id: string } }) {
         {/* local image */}
         <div>
           <Image
-            src={bike}
+            src={peak}
             alt="maps"
             priority
             width={192}
