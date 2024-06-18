@@ -1,9 +1,7 @@
-import React from 'react'
+'use client'
 
-const createUser = async () => {
-  'use server'
-  console.log('creating user...')
-}
+import createUser from "@/utils/actions"
+
 
 function Form() {
   return (
@@ -13,14 +11,14 @@ function Form() {
         className={inputStyle}
         type="text"
         name="firstName"
-        defaultValue="John"
+        defaultValue="Mario"
         required
       />
       <input
         className={inputStyle}
         type="text"
         name="lastName"
-        defaultValue="Smith"
+        defaultValue="Rossi"
         required
       />
       <button className={btnStyle} type="submit">
