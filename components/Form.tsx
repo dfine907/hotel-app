@@ -1,7 +1,20 @@
 'use client'
 
-import createUser from "@/utils/actions"
+import { useFormState, useFormStatus } from 'react-dom'
+import createUser from '@/utils/actions'
 
+const SubmitButton = () => {
+  const {pending} = useFormStatus()
+
+
+  return (
+    <>
+      <button className={btnStyle} disabled={pending} type="submit">
+        {pending? 'Submitting...' : 'Submit'}
+      </button>
+    </>
+  )
+}
 
 function Form() {
   return (
@@ -21,9 +34,7 @@ function Form() {
         defaultValue="Rossi"
         required
       />
-      <button className={btnStyle} type="submit">
-        SUBMIT
-      </button>
+      <SubmitButton />
     </form>
   )
 }
