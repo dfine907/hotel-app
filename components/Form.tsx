@@ -17,8 +17,10 @@ const SubmitButton = () => {
 }
 
 function Form() {
+ const [message, formAction] = useFormState(createUser, null)
   return (
-    <form action={createUser} className={formStyle}>
+    <form action={formAction} className={formStyle}>
+      <h3>{message}</h3>
       <h2 className="text-2xl capitalize mb-4">Create User</h2>
       <input
         className={inputStyle}
