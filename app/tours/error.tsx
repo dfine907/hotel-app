@@ -6,7 +6,7 @@ function error({ error }: { error: Error }) {
   return (
     <>
       <div>
-        We've encounted an error. We appreciate your patience...
+        We encounted an error. We appreciate your patience...
       </div>
     </>
   )
